@@ -4,11 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="A semantic HTML webpage" />
+  <meta name="author" content="Iryna Murzak" />
+  <meta name="keywords" content="HTML, CSS" />
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header class="header" id="header">
+    <div class="header__item--position-left">1.1</div>
+    <div class="header__item--position-right">1.2</div>
+  </header>
+  <main class="main">
+    <section class="images__section" id="image__section">
+      <picture class="images__picture"><img class="images__picture--first"
+          src="https://talk.plesk.com/data/avatars/h/177/177898.jpg?1585473595" alt="First image" loading="lazy" />
+      </picture>
+      <picture class="images__picture"><img class="images__picture--second"
+          src="https://talk.plesk.com/data/avatars/h/177/177898.jpg?1585473595" alt="Second image" loading="lazy" />
+      </picture>
+      <picture class="images__picture"><img class="images__picture--third"
+          src="https://talk.plesk.com/data/avatars/h/177/177898.jpg?1585473595" alt="Third image" loading="lazy" />
+      </picture>
+      <picture class="images__picture"><img class="images__picture--fourth"
+          src="https://talk.plesk.com/data/avatars/h/177/177898.jpg?1585473595" alt="Fourth image" loading="lazy" />
+      </picture>
+    </section>
 
+    <aside class="aside">
+      <section class="fourth__section__container" id="fourth__section__container">
+        <div class="fourth-section__item--first">4.1</div>
+        <div class="fourth-section__item--second">4.2</div>
+        <div class="fourth-section__item--third">4.3</div>
+        <div class="fourth-section__item--fifth">5</div>
+      </section>
+
+      <nav class="navigation">
+        <ul class="sixth__section--links">
+          <li class="links__link"><a href="/">Home</a></li>
+          <li class="links__link"><a href="#image__section">What we do</a></li>
+          <li class="links__link"><a href="#fourth__section__container">Our company</a></li>
+          <li class="links__link"><a href="#footer">Contact us</a></li>
+          <li class="links__link"><a href="#header">More</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+  <footer class="footer" id="footer">7</footer>
 </body>
 
 </html>
